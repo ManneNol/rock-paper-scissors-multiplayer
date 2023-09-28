@@ -11,13 +11,12 @@ for (int i = 1; i <= playerCount; i++) // loop for creating each player
     {
         Console.Clear();
         Console.Write("Please enter the name of player " + i + ": ");
-        name = Console.ReadLine() ?? string.Empty;
+        name = Console.ReadLine() ?? string.Empty; // ?? to handle null case
     }
 
     // creates a new player and adds them to the list with their selected name
     players.Add(new Player(name));
 }
-
 
 // Game Loop
 // Plays 3 rounds

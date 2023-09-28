@@ -2,6 +2,7 @@ namespace rock_paper_scissors_multiplayer;
 
 public class Player
 {
+    // readonly prevents future reassignment of Name
     public readonly string Name;
     public Option Choice;
 
